@@ -13,11 +13,16 @@
 
     const difference= dateTarget-dateNow;
 
+    
+    const day = Math.floor((difference/1000/60/60/24));
     const seconds=Math.floor((difference/1000)%60)
     const minutes=Math.floor((difference/1000/60)%60)
     const hour =Math.floor((difference/1000/60/60)%24)
 
 
+    document.querySelector(".day").innerHTML =
+
+    day.toString().padStart(2,"0")//.getHours()
 
     document.querySelector(".hour").innerHTML =
 
@@ -58,14 +63,18 @@ setInterval(function(){
 //HERE IS THE CLOCKDOWN BY USER
 
 
+let dateTarget = new Date("2022-04-17T17:15:00")
+
+document.querySelector(".date-button").addEventListener("click",function(){
+    dateTarget= new Date(document.querySelector(".date-input").value);
+})
 
 setInterval(function(){
 
     const dateNow =new Date();
 
-    var dateTarget = new Date(document.querySelector(".date-input").value)
 
-    const difference= dateTarget-dateNow;
+    let difference= dateTarget-dateNow;
 
 
     const day = Math.floor((difference/1000/60/60/24));
@@ -78,18 +87,20 @@ setInterval(function(){
 
     document.querySelector(".day-2").innerHTML =
 
-    day.toString().padStart(2,"0")//.getHours()
+    day.toString().padStart(2,"0")
 
     document.querySelector(".hour-2").innerHTML =
 
-    hour.toString().padStart(2,"0")//.getHours()
+    hour.toString().padStart(2,"0")
 
     document.querySelector(".minute-2").innerHTML =
 
-    minutes.toString().padStart(2,"0")//.getMinutes()
+    minutes.toString().padStart(2,"0")
 
     document.querySelector(".second-2").innerHTML =
 
-    seconds.toString().padStart(2,"0")//.getSeconds()
+    seconds.toString().padStart(2,"0")
 
 },1000);
+
+
