@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS CLOCK</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+
+<!--COUNTDOWN-->
+<section class="coming-soon">
+    <div>
+        <h2>We are opening soon</h2>
+        <h3>14 - 12 - 2022</h3>
+        <div class="countDown">
+
+            <div class="container-day">
+                <h3 class="day">Time</h3>
+                <h3>Day</h3>
+            </div>
+
+            <div class="container-hour">
+                <h3 class="hour">Hour</h3>
+                <h3>Hour</h3>
+
+            </div>
+            <div class="container-minute">
+                <h3 class="minute">Minutes</h3>
+                <h3>Minutes</h3>
+
+            </div>
+            <div class="container-second">
+                <h3 class="second">Seconds</h3>
+                <h3>Seconds</h3>
+
+            </div>
+        </div>
+    </div>
+    <img class="imagen1" src="img/form.png"  alt="">
+</section>
+
+<!--LOCAL TIME-->
+
+<section class="local-time">
+    <div>
+        <h2>This is the local time</h2>
+        <div class="clock">
+
+            <div class="container-day">
+                <h3 class="day-1">Time</h3>
+                <h3>Day</h3>
+            </div>
+
+            <div class="container-hour">
+                <h3 class="hour-1">Hour</h3>
+                <h3>Hour</h3>
+
+            </div>
+            <div class="container-minute">
+                <h3 class="minute-1">Minutes</h3>
+                <h3>Minutes</h3>
+
+            </div>
+            <div class="container-second">
+                <h3 class="second-1">Seconds</h3>
+                <h3>Seconds</h3>
+
+            </div>
+        </div>
+    </div>
+    <img class="imagen1" src="img/swiss.png"  alt="">
+
+</section>    
+
+<section class="set-hour">
+
+    <div>
+        <h2>Set your wish date</h2>
+        <div class="countDown-user">
+
+            <div class="container-day">
+                <h3 class="day-2">Time</h3>
+                <h3>Day</h3>
+                
+            </div>
+
+            <div class="container-hour">
+                <h3 class="hour-2">Hour</h3>
+                <h3>Hour</h3>
+                
+            </div>
+            <div class="container-minute">
+                <h3 class="minute-2">Minutes</h3>
+                <h3>Minutes</h3>
+                
+            </div>
+            <div class="container-second">
+                <h3 class="second-2">Seconds</h3>
+                <h3>Seconds</h3>
+                                  
+            </div>
+            
+        </div>
+    </div>
+    <form>
+        <input type="datetime-local" class= "date-input" type="text" name="text" > 
+        <button type="button" onclick="buttonClick()" class="date-button">reset</button>
+    </form>
+    <img class="imagen1" src="img/wish.png"  alt="">
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src='main.js'></script>
+</body>
+</html>
