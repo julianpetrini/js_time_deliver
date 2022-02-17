@@ -63,14 +63,18 @@ setInterval(function(){
 //HERE IS THE CLOCKDOWN BY USER
 
 
+let dateTarget = new Date("2022-04-17T17:15:00")
+
+document.querySelector(".date-button").addEventListener("click",function(){
+    dateTarget= new Date(document.querySelector(".date-input").value);
+})
 
 setInterval(function(){
 
     const dateNow =new Date();
 
-    var dateTarget = new Date(document.querySelector(".date-input").value)
 
-    const difference= dateTarget-dateNow;
+    let difference= dateTarget-dateNow;
 
 
     const day = Math.floor((difference/1000/60/60/24));
@@ -98,3 +102,5 @@ setInterval(function(){
     seconds.toString().padStart(2,"0")
 
 },1000);
+
+
