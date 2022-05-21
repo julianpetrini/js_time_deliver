@@ -3,23 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body{
-    
     text-align: center;
     font-family: 'Lato', sans-serif;
     color: rgb(2, 0, 109);
     background-color: rgb(255, 255, 255);
 }
-
-
 h2{
     font-size: 5rem;
     font-weight: bold;
-    padding: 3rem;
+    padding: 2rem;
 }
-
 .local-time{
     min-height: 100vh;
     display: flex;
@@ -28,71 +22,49 @@ h2{
     justify-content: center;
 
 }
-
 .coming-soon{
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
-
 .set-hour{
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
-
-
-
 .countDown{
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 3rem;
-
 }
-
 .clock{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 3rem;
-
+    padding: 2rem;
 }
-
-
 .countDown-user{
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 3rem;
-
 }
-
-
 h3{
     font-size: 3rem;
     padding:1rem;
 }
-
-
 .imagen1{
     max-height: 50vh;
 }
-
-
-
 .date-input{
     padding:0.5rem;
     margin: 0.5rem;
 }
-
-
 .date-button{
     display: inline-block;
     padding:0.7em 1.7em;
@@ -106,7 +78,51 @@ h3{
     box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     text-align:center;
     position:relative;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+    h3,.day,.hour,.minute{
+        font-size: 1.5rem;
+        padding: 0.5rem;
     }
-
+    h2{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+    .countDown{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 1rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .coming-soon, .local-time{
+        max-width: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    .hour-1,.minute-1,.second-1{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    h3,.day,.hour,.minute{
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .clock{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0.5rem;
+    }
+  }
 
 
